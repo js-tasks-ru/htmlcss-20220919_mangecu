@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./button.css">
-    </head>
-    <body>
-
-    </body>
+   <head>
+      <link rel="stylesheet" href="../../assets/css/main.css">
+      <link rel="stylesheet" href="./button.css">
+   </head>
+   <body>
+   <div class="page">
+      <header class="header">
+         <div class="container">
+            <h1 class="header__title">Reusable component library</h1>
+         </div>
+      </header>
+      <main class="preview preview_border">
+         <div class="container">
+            <div class="preview__line">
+               <button class="button preview__button preview__button_primary preview__button_primary-hover">Primary</button>
+               <button class="button preview__button preview__button_secondary preview__button_secondary-hover">Secondary</button>
+               <button class="button preview__button preview__button_alternate preview__button_alternate-hover">Alternate</button>
+            </div>
+            <div class="preview__line">
+               <button class="button preview__button preview__button_primary" disabled>Primary</button>
+               <button class="button preview__button preview__button_secondary" disabled>Secondary</button>
+               <button class="button preview__button preview__button_alternate" disabled>Alternate</button>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <h2 class="footer__title footer__title_gap">About</h2>
+            <p class="footer__info">This project is a collection of professionally designed, pre-built, fully responsive<br>HTML snippets you can drop into your projects. Get started by checking out our free<br>preview components, or browsing the PNG previews in the categories you're most<br>curious about.</p>
+         </div>
+      </footer>
+   </div>
+   </body>
 </html>
