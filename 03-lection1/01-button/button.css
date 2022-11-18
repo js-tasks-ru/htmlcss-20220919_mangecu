@@ -9,23 +9,26 @@
     padding: 14px 0 13px;
     font-family: "Roboto", sans-serif;
     border-radius: 8px;
-    width: 189px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_primary {
     background: #4263EB;
-    border: 1px solid #4263EB;
+    padding-left: 66.42px;
+    padding-right: 65.58px;
 }
 
 .button_secondary {
     background: var(--purple);
-    border: 1px solid var(--purple);
+    padding-left: 56.04px;
+    padding-right: 56.96px;
 }
 
 .button_alternate {
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
+    padding-left: 61.23px;
+    padding-right: 61.77px;
 }
 
 /* disables styles */
@@ -36,17 +39,15 @@
 }
 
 /* hover styles */
-.button_primary-hover:hover {
+.button_primary:hover {
     background: #2342C0;
-    border: 1px solid #2342C0;
 }
 
-.button_secondary-hover:hover {
+.button_secondary:hover {
     background: #5028C6;
-    border: 1px solid #5028C6;
 }
 
-.button_alternate-hover:hover {
+.button_alternate:hover {
     border: 1px solid var(--black);
 }
 
