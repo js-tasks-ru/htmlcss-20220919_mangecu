@@ -5,30 +5,28 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    padding: 15px 15px 14px;
     color: var(--white);
-    padding: 14px 0 13px;
     font-family: "Roboto", sans-serif;
     border-radius: 8px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
+.button:nth-child(3n) {
+    padding: 14px 14px 13px;
+}
+
 .button_primary {
     background: #4263EB;
-    padding-left: 66.42px;
-    padding-right: 65.58px;
 }
 
 .button_secondary {
     background: var(--purple);
-    padding-left: 56.04px;
-    padding-right: 56.96px;
 }
 
 .button_alternate {
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
-    padding-left: 61.23px;
-    padding-right: 61.77px;
 }
 
 /* disables styles */
