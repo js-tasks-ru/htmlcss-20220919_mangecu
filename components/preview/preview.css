@@ -1,11 +1,14 @@
-.preview__wrap {
-    height: 1036px;
-}
-
 .preview {
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
     background-color: #F9FAFC;
+}
+
+.preview__items {
+    padding: 68px 0 174px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
