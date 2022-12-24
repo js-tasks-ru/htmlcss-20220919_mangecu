@@ -1,4 +1,4 @@
-.item {
+.card {
     height: 367px;
     width: 350px;
     padding: 32px 25px 30px;
@@ -15,10 +15,10 @@
     color: var(--black);
 }
 
-.item_gap {
+.card_gap {
     margin-bottom: 30px;
 }
 
-.item__title {
+.card__title {
 
 }

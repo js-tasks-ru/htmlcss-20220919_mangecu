@@ -28,11 +28,11 @@
     gap: 8px;
 }
 
-.skeleton__line_up {
+.skeleton__line_small {
     width: 40.23%;
 }
 
-.skeleton__line_down {
+.skeleton__line_medium {
     width: 59.08%;
 }
 
