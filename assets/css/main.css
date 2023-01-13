@@ -5,6 +5,10 @@
 @import '../../components/preview/preview.css';
 @import '../../components/container/container.css';
 @import '../../components/reset/reset.css';
+@import '../../components/template/template.css';
+@import '../../components/navigation/navigation.css';
+@import '../../components/switch-theme/theme.css';
+@import '../../components/sidebar/sidebar.css';
 
 :root {
     --white: #ffffff;
@@ -25,6 +29,3 @@
     --secondary: var(--purple);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
