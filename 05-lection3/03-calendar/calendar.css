@@ -57,11 +57,11 @@
     color: #90A0B7;
 }
 
-.calendar__field {
+.calendar__item_field {
     background: rgba(160, 177, 245, 0.2);
 }
 
-.calendar__select {
+.calendar__item_select {
     background: #4263EB;
     color: var(--white);
 }

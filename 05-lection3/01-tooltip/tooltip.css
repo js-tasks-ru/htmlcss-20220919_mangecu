@@ -23,19 +23,21 @@
     text-align: center;
     color: var(--white);
     padding: 13px 21px;
-    position: absolute;
-    transform: translate(calc(-50% + 12px), calc(-100% - 6px));
     white-space: nowrap;
+    transform: translate(calc(-50% + 12px), calc(-100% - 6px));
+    position: absolute;
+    top: -3px;
 }
 
-.tooltip__triangle {
-    height: 6px;
-    width: 14px;
-    background: #4263EB;
-    clip-path: polygon(0 0, 14px 0, 7px 6px);
+.tooltip__helper:before {
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 50%;
+    display: block;
+    content: '';
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 7px solid #4263EB;
     transform: translateX(-50%);
 }
 
