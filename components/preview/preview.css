@@ -7,6 +7,13 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
+.preview__cards {
+    padding: 68px 0 174px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 
 
