@@ -1,0 +1,16 @@
+.template {
+    height: 100%;
+    padding-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    column-gap: 56px;
+
+}
+
+.template__component {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
+

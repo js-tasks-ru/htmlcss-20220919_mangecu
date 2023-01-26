@@ -1,0 +1,22 @@
+.sidebar {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.sidebar__link {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.sidebar__item:last-child {
+    margin-top: 30px;
+}
+
+.sidebar__link_active {
+    color: #D84910;
+}

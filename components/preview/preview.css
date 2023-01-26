@@ -1,7 +1,10 @@
 .preview {
+    background: #F9FAFC;
+}
+
+.preview_border {
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
-    background-color: #F9FAFC;
 }
 
 .preview__cards {

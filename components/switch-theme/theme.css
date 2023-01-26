@@ -1,0 +1,56 @@
+/*.theme {
+    display: flex;
+    justify-content: space-between;
+    width: 124px;
+    position: relative;
+}
+
+.theme__toggle {
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid #ACB5BD;
+    border-radius: 16px;
+    display: inline-flex;
+    position: relative;
+    padding: 1px;
+}
+
+*/
+
+
+/*.theme {
+    width: 124px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.theme__sun {
+    width: 24px;
+    height: 24px;
+    color: #212429;
+}
+
+.theme__moon {
+    width: 24px;
+    height: 24px;
+    color: #ACB5BD;
+}
+
+.theme__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.theme__state {
+    height: inherit;
+    width: 52px;
+    background: var(--white);
+    border: 1px solid #ACB5BD;
+    border-radius: 16px;
+    padding: 1px;
+}
+*/
+
+
