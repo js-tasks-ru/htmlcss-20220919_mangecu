@@ -1,32 +1,11 @@
-/*.theme {
+.theme {
+    width: 124px;
     display: flex;
     justify-content: space-between;
-    width: 124px;
-    position: relative;
-}
-
-.theme__toggle {
-    width: 52px;
-    height: 28px;
-    background: var(--white);
-    border: 1px solid #ACB5BD;
-    border-radius: 16px;
-    display: inline-flex;
-    position: relative;
-    padding: 1px;
-}
-
-*/
-
-
-/*.theme {
-    width: 124px;
-    height: 28px;
-    display: flex;
-    align-items: center;
 }
 
 .theme__sun {
+    order: -1;
     width: 24px;
     height: 24px;
     color: #212429;
@@ -44,13 +23,32 @@
 }
 
 .theme__state {
-    height: inherit;
     width: 52px;
+    height: 28px;
     background: var(--white);
     border: 1px solid #ACB5BD;
     border-radius: 16px;
+    display: flex;
+    justify-content: left;
     padding: 1px;
 }
-*/
 
+.theme__toggle {
+    width: 24px;
+    height: 24px;
+    background: #ACB5BD;
+    border-radius: 16px;
+}
+
+.theme__input:checked ~ .theme__state {
+    justify-content: right;
+}
+
+.theme__input:checked ~ .theme__sun {
+    color: #ACB5BD;
+}
+
+.theme__input:checked ~ .theme__moon {
+    color: #212429;
+}
 

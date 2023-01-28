@@ -7,18 +7,34 @@
          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="../assets/css/main.css">
-   <style>
-      .header {
-         background: var(--white);
-         height: 57px;
-      }
-   </style>
+   <title>Components page</title>
 </head>
 <body>
 <div class="page">
    <header class="header">
-      <div class="container">
-
+      <div class="header__top container">
+         <svg class="header__logo">
+            <use href="../assets/images/svg/sprite.svg#logo"></use>
+         </svg>
+         <div class="header__right">
+            <nav class="navigation navigation__main">
+               <a href="#" class="navigation__link navigation__main_active">Components</a>
+               <a href="#" class="navigation__link">About</a>
+               <a href="#" class="navigation__link">Contact</a>
+            </nav>
+            <label class="theme">
+               <input type="checkbox" class="theme__input">
+               <svg class="theme__sun">
+                  <use href="../assets/images/svg/sprite.svg#icon-sun"></use>
+               </svg>
+               <div class="theme__state">
+                  <span class="theme__toggle"></span>
+               </div>
+               <svg class="theme__moon">
+                  <use href="../assets/images/svg/sprite.svg#icon-moon"></use>
+               </svg>
+            </label>
+         </div>
       </div>
    </header>
    <main class="preview">
@@ -40,7 +56,7 @@
          </article>
       </div>
    </main>
-   <footer class="footer footer__template footer_bg">
+   <footer class="footer footer__template">
       <div class="container">
          <h5 class="footer__title_template">Reusable component library</h5>
       </div>

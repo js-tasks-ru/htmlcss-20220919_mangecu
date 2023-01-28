@@ -7,11 +7,33 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
-.preview__cards {
-    padding: 68px 0 174px;
+.preview__wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 68px 0 92px;
+    gap: 64px;
+}
+
+.preview__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: repeat(auto-fit, 367px);
+    grid-auto-rows: 367px;
+    grid-auto-columns: 350px;
+    gap: 30px;
+}
+
+.preview__button {
+    padding: 15px 52px 14px 53px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    color: #495057;
+    align-self: center;
 }
 
 

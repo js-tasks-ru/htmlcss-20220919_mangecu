@@ -10,7 +10,7 @@
 </head>
 <body>
    <div class="page">
-      <header class="header">
+      <header class="header header__main">
          <div class="container">
             <div class="header__top">
                <svg class="header__logo">
@@ -22,6 +22,18 @@
                      <a href="#" class="navigation__link">About</a>
                      <a href="#" class="navigation__link">Contact</a>
                   </nav>
+                  <label class="theme">
+                     <input type="checkbox" class="theme__input">
+                     <svg class="theme__sun">
+                        <use href="assets/images/svg/sprite.svg#icon-sun"></use>
+                     </svg>
+                     <div class="theme__state">
+                        <span class="theme__toggle"></span>
+                     </div>
+                     <svg class="theme__moon">
+                        <use href="assets/images/svg/sprite.svg#icon-moon"></use>
+                     </svg>
+                  </label>
                </div>
             </div>
             <h1 class="header__title">Reusable component library</h1>
@@ -33,45 +45,48 @@
             </nav>
          </div>
       </header>
-      <main class="preview">
+      <main class="preview preview_border">
          <div class="container">
-            <div class="preview__cards">
-               <div class="card card_gap">
-                  <div class="card__content">
+            <div class="preview__wrap">
+               <div class="preview__cards">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Tooltip</h3>
                   </div>
-                  <h3 class="card__title">Tooltip</h3>
-               </div>
-               <div class="card card_gap">
-                  <div class="card__content">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Custom form elements</h3>
                   </div>
-                  <h3 class="card__title">Custom form elements</h3>
-               </div>
-               <div class="card card_gap">
-                  <div class="card__content">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Calendar</h3>
                   </div>
-                  <h3 class="card__title">Calendar</h3>
-               </div>
-               <div class="card card_gap">
-                  <div class="card__content">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Modal dialog</h3>
                   </div>
-                  <h3 class="card__title">Modal dialog</h3>
-               </div>
-               <div class="card card_gap">
-                  <div class="card__content">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Histogram</h3>
                   </div>
-                  <h3 class="card__title">Histogram</h3>
-               </div>
-               <div class="card card_gap">
-                  <div class="card__content">
+                  <div class="card card_gap">
+                     <div class="card__content">
 
+                     </div>
+                     <h3 class="card__title">Avatar</h3>
                   </div>
-                  <h3 class="card__title">Avatar</h3>
                </div>
+               <button class="button preview__button">Load more</button>
             </div>
          </div>
       </main>
