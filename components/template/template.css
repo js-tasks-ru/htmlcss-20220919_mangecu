@@ -1,6 +1,6 @@
 .template {
     height: 100%;
-    padding-top: 36px;
+    padding-top: 62px;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;

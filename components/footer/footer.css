@@ -3,15 +3,12 @@
 }
 
 .footer__template {
-    padding: 92px 0 56px;
+    padding: 56px 0 56px;
 }
 
 .footer__main {
     padding: 71px 0 136px;
-}
-
-.footer_bg {
-    background: #F9FAFC;
+    background: var(--white);
 }
 
 .footer__title {
