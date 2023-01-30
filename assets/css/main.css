@@ -10,6 +10,7 @@
 @import '../../components/switch-theme/theme.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/card/card.css';
+@import '../../components/button/button.css';
 
 :root {
     --white: #ffffff;
