@@ -1,0 +1,33 @@
+.input {
+    /* Placeholder */
+
+    position: absolute;
+    width: 112px;
+    height: 26px;
+    left: 24px;
+    top: calc(50% - 26px/2 + 2px);
+
+    /* h4 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+
+    /* Gray 2 */
+    color: #DDE2E5;
+
+
+}
+
+.input__field {
+
+}
+
+.input__icon {
+    width: 24px;
+    height: 24px;
+}
+
+
