@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="../../assets/css/main.css">
+   <link rel="stylesheet" href="./toggler.css">
+   <style>
+      .preview {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+      }
+   </style>
+</head>
+<body>
+<div class="page">
+   <header class="header">
+      <div class="header__main">
+         <div class="container">
+            <div class="header__top">
+               <svg class="header__logo">
+                  <use href="../../assets/images/svg/sprite.svg#logo"></use>
+               </svg>
+               <div class="header__right">
+                  <nav class="navigation navigation__main">
+                     <a href="#" class="navigation__link navigation__main_active">Components</a>
+                     <a href="#" class="navigation__link">About</a>
+                     <a href="#" class="navigation__link">Contact</a>
+                  </nav>
+                  <label class="theme">
+                     <input type="checkbox" class="theme__input">
+                     <svg class="theme__sun">
+                        <use href="../../assets/images/svg/sprite.svg#icon-sun"></use>
+                     </svg>
+                     <div class="theme__state">
+                        <span class="theme__toggle"></span>
+                     </div>
+                     <svg class="theme__moon">
+                        <use href="../../assets/images/svg/sprite.svg#icon-moon"></use>
+                     </svg>
+                  </label>
+               </div>
+            </div>
+            <h1 class="header__title">Reusable component library</h1>
+            <nav class="navigation navigation__content">
+               <a href="#" class="navigation__link navigation__content_active">All components</a>
+               <a href="#" class="navigation__link">Elements</a>
+               <a href="#" class="navigation__link">Containers</a>
+               <a href="#" class="navigation__link">Templates</a>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <main class="preview container">
+      <label class="toggler">
+         <input type="checkbox" class="toggler__input">
+         <div class="toggler__state">
+            <span class="toggler__switch"></span>
+         </div>
+      </label>
+      <label class="toggler">
+         <input type="checkbox" class="toggler__input" disabled>
+         <div class="toggler__state">
+            <span class="toggler__switch"></span>
+         </div>
+      </label>
+   </main>
+   <footer class="footer">
+      <div class="footer__main">
+         <div class="container">
+            <h2 class="footer__title footer__title_gap">About</h2>
+            <p class="footer__info">This project is a collection of professionally designed, pre-built, fully responsive<br>HTML snippets you can drop into your projects. Get started by checking out our free<br>preview components, or browsing the PNG previews in the categories you're most<br>curious about.</p>
+         </div>
+      </div>
+   </footer>
+</div>
+</body>
 </html>
