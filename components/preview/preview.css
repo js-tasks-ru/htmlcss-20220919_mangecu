@@ -1,10 +1,15 @@
 .preview {
-    background: #F9FAFC;
+
+}
+
+.preview__tabs {
+
 }
 
 .preview_border {
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
+    background: #F9FAFC;
 }
 
 .preview__wrap {
@@ -26,6 +31,10 @@
     border: 1px solid #ACB5BD;
     color: #495057;
     align-self: center;
+}
+
+.preview__cards {
+    display: none;
 }
 
 

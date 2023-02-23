@@ -1,33 +1,74 @@
 .input {
-    /* Placeholder */
+    position: relative;
+}
 
-    position: absolute;
-    width: 112px;
-    height: 26px;
-    left: 24px;
-    top: calc(50% - 26px/2 + 2px);
+.input__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    margin-bottom: 5px;
+}
 
-    /* h4 */
-    font-family: 'Inter';
+.input__field {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    background: var(--white);
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    /* identical to box height, or 130% */
-
-    /* Gray 2 */
-    color: #DDE2E5;
-
-
 }
 
-.input__field {
+.input__icon {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
 
+.input__field[data-status='success'] {
+    border: 1px solid #374FC7;
+}
+
+.input__field[data-status='success'] ~ .input__icon {
+    color: #374FC7;
+}
+
+.input__field[data-status='error'] {
+    border: 1px solid #F03D3E;
+}
+
+.input__field[data-status='error'] ~ .input__icon {
+    color: #F03D3E;
+}
+
+.input__field:focus {
+    border: 1px solid #374FC7;
+}
+
+.input__field::placeholder {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #DDE2E5;
 }
 
 .input__icon {
     width: 24px;
     height: 24px;
 }
+
+
 
 

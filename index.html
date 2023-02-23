@@ -10,45 +10,61 @@
 </head>
 <body>
    <div class="page">
-      <header class="header header__main">
-         <div class="container">
-            <div class="header__top">
-               <svg class="header__logo">
-                  <use href="assets/images/svg/sprite.svg#logo"></use>
-               </svg>
-               <div class="header__right">
-                  <nav class="navigation navigation__main">
-                     <a href="#" class="navigation__link navigation__main_active">Components</a>
-                     <a href="#" class="navigation__link">About</a>
-                     <a href="#" class="navigation__link">Contact</a>
-                  </nav>
-                  <label class="theme">
-                     <input type="checkbox" class="theme__input">
-                     <svg class="theme__sun">
-                        <use href="assets/images/svg/sprite.svg#icon-sun"></use>
-                     </svg>
-                     <div class="theme__state">
-                        <span class="theme__toggle"></span>
-                     </div>
-                     <svg class="theme__moon">
-                        <use href="assets/images/svg/sprite.svg#icon-moon"></use>
-                     </svg>
-                  </label>
+      <header class="header">
+         <div class="header__main">
+            <div class="container">
+               <div class="header__top">
+                  <svg class="header__logo">
+                     <use href="assets/images/svg/sprite.svg#logo"></use>
+                  </svg>
+                  <div class="header__right">
+                     <nav class="navigation navigation__main">
+                        <a href="#" class="navigation__link navigation__main_active">Components</a>
+                        <a href="#" class="navigation__link">About</a>
+                        <a href="#" class="navigation__link">Contact</a>
+                     </nav>
+                     <label class="theme">
+                        <input type="checkbox" class="theme__input">
+                        <svg class="theme__sun">
+                           <use href="assets/images/svg/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <div class="theme__state">
+                           <span class="theme__toggle"></span>
+                        </div>
+                        <svg class="theme__moon">
+                           <use href="assets/images/svg/sprite.svg#icon-moon"></use>
+                        </svg>
+                     </label>
+                  </div>
                </div>
+               <h1 class="header__title">Reusable component library</h1>
             </div>
-            <h1 class="header__title">Reusable component library</h1>
-            <nav class="navigation navigation__content">
-               <a href="#" class="navigation__link navigation__content_active">All components</a>
-               <a href="#" class="navigation__link">Elements</a>
-               <a href="#" class="navigation__link">Containers</a>
-               <a href="#" class="navigation__link">Templates</a>
-            </nav>
          </div>
       </header>
-      <main class="preview preview_border">
-         <div class="container">
-            <div class="preview__wrap">
-               <div class="preview__cards">
+      <main class="preview">
+         <div class="tabs">
+            <div class="tabs__wrap container">
+               <label class="tabs__radio">
+                  <input type="radio" name="choice" class="tabs__input" data-block="all-components" checked>
+                  <div class="tabs__title" data-block="all-components">All components</div>
+               </label>
+               <label class="tabs__radio">
+                  <input type="radio" name="choice" class="tabs__input" data-block="elements">
+                  <div class="tabs__title" data-block="elements">Elements</div>
+               </label>
+               <label class="tabs__radio">
+                  <input type="radio" name="choice" class="tabs__input" data-block="container">
+                  <div class="tabs__title" data-block="container">Container</div>
+               </label>
+               <label class="tabs__radio">
+                  <input type="radio" name="choice" class="tabs__input">
+                  <div class="tabs__title">Templates</div>
+               </label>
+            </div>
+         </div>
+         <div class="preview_border">
+            <div class="preview__wrap container">
+               <div class="preview__cards" id="all-components">
                   <div class="card card_gap">
                      <div class="card__content">
 
@@ -86,14 +102,56 @@
                      <h3 class="card__title">Avatar</h3>
                   </div>
                </div>
+               <div class="preview__cards" id="elements">
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Custom form elements</h3>
+                  </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Histogram</h3>
+                  </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Avatar</h3>
+                  </div>
+               </div>
+               <div class="preview__cards" id="container">
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Tooltip</h3>
+                  </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Calendar</h3>
+                  </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Modal dialog</h3>
+                  </div>
+               </div>
                <button class="button preview__button">Load more</button>
             </div>
          </div>
       </main>
-      <footer class="footer footer__main">
-         <div class="container">
-            <h2 class="footer__title footer__title_gap">About</h2>
-            <p class="footer__info">This project is a collection of professionally designed, pre-built, fully responsive<br>HTML snippets you can drop into your projects. Get started by checking out our free<br>preview components, or browsing the PNG previews in the categories you're most<br>curious about.</p>
+      <footer class="footer">
+         <div class="footer__main">
+            <div class="container">
+               <h2 class="footer__title footer__title_gap">About</h2>
+               <p class="footer__info">This project is a collection of professionally designed, pre-built, fully responsive<br>HTML snippets you can drop into your projects. Get started by checking out our free<br>preview components, or browsing the PNG previews in the categories you're most<br>curious about.</p>
+            </div>
          </div>
       </footer>
    </div>

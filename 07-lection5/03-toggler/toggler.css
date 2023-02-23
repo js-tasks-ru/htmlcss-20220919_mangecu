@@ -1,5 +1,7 @@
 .toggler {
     position: relative;
+    display: flex;
+    gap: 12px;
 }
 
 .toggler__input {
@@ -23,6 +25,15 @@
     height: 24px;
     background: #DDE2E5;
     border-radius: 16px;
+}
+
+.toggler__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
 }
 
 .toggler__input:checked ~ .toggler__state {

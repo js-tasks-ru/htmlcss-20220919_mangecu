@@ -1,0 +1,45 @@
+.tabs {
+    background: #FFFFFF;
+}
+
+.tabs__wrap {
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__radio {
+    display: inline-block;
+    position: relative;
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tabs__input:checked ~ .tabs__title{
+    padding-bottom: 8px;
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs:has(.tabs__input[data-block="all-components"]:checked) ~ .preview_border .preview__cards#all-components {
+    display: grid;
+}
+
+.tabs:has(.tabs__input[data-block="elements"]:checked) ~ .preview_border .preview__cards#elements {
+    display: grid;
+}
+
+.tabs:has(.tabs__input[data-block="container"]:checked) ~ .preview_border .preview__cards#container {
+    display: grid;
+}
+
