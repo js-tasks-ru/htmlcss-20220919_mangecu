@@ -40,3 +40,28 @@
 .header__top_template {
     padding-bottom: 62px;
 }
+
+@media screen and (max-width: 375px){
+    .header__top {
+        justify-content: center;
+    }
+    .header__right {
+        display: none;
+    }
+
+    .header__logo {
+        flex-grow: 0;
+    }
+
+    .header__title {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        color: #495057;
+        padding: 49px 0 69px;
+    }
+
+    .header__top_template {
+        padding-bottom: 17px;
+    }
+}
