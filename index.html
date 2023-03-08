@@ -18,10 +18,12 @@
                      <use href="assets/images/svg/sprite.svg#logo"></use>
                   </svg>
                   <div class="header__right">
-                     <nav class="navigation navigation__main">
-                        <a href="#" class="navigation__link navigation__main_active">Components</a>
-                        <a href="#" class="navigation__link">About</a>
-                        <a href="#" class="navigation__link">Contact</a>
+                     <nav class="navigation">
+                        <div class="navigation__main">
+                           <a href="#" class="navigation__link navigation__main_active">Components</a>
+                           <a href="#" class="navigation__link">About</a>
+                           <a href="#" class="navigation__link">Contact</a>
+                        </div>
                      </nav>
                      <label class="theme">
                         <input type="checkbox" class="theme__input">
@@ -44,27 +46,18 @@
       <main class="preview">
          <div class="tabs">
             <div class="tabs__wrap container">
-               <label class="tabs__radio">
-                  <input type="radio" name="choice" class="tabs__input" data-block="all-components" checked>
-                  <div class="tabs__title" data-block="all-components">All components</div>
-               </label>
-               <label class="tabs__radio">
-                  <input type="radio" name="choice" class="tabs__input" data-block="elements">
-                  <div class="tabs__title" data-block="elements">Elements</div>
-               </label>
-               <label class="tabs__radio">
-                  <input type="radio" name="choice" class="tabs__input" data-block="container">
-                  <div class="tabs__title" data-block="container">Container</div>
-               </label>
-               <label class="tabs__radio">
-                  <input type="radio" name="choice" class="tabs__input">
-                  <div class="tabs__title">Templates</div>
-               </label>
-            </div>
-         </div>
-         <div class="preview_border">
-            <div class="preview__wrap container">
-               <div class="preview__cards" id="all-components">
+               <input type="radio" class="tabs__input tabs__input_all-components" name="choice" id="#all-components" checked>
+               <input type="radio" class="tabs__input tabs__input_elements" name="choice" id="#elements">
+               <input type="radio" class="tabs__input tabs__input_container" name="choice" id="#container">
+
+               <div class="tabs__scroller">
+                  <label for="#all-components" class="tabs__title">All components</label>
+                  <label for="#elements" class="tabs__title">Elements</label>
+                  <label for="#container" class="tabs__title">Container</label>
+               </div>
+
+
+               <div class="preview__cards preview__cards_all-components">
                   <div class="card card_gap">
                      <div class="card__content">
 
@@ -102,7 +95,7 @@
                      <h3 class="card__title">Avatar</h3>
                   </div>
                </div>
-               <div class="preview__cards" id="elements">
+               <div class="preview__cards preview__cards_elements">
                   <div class="card card_gap">
                      <div class="card__content">
 
@@ -122,7 +115,7 @@
                      <h3 class="card__title">Avatar</h3>
                   </div>
                </div>
-               <div class="preview__cards" id="container">
+               <div class="preview__cards preview__cards_container">
                   <div class="card card_gap">
                      <div class="card__content">
 
@@ -142,7 +135,6 @@
                      <h3 class="card__title">Modal dialog</h3>
                   </div>
                </div>
-               <button class="button preview__button">Load more</button>
             </div>
          </div>
       </main>

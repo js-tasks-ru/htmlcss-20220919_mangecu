@@ -1,4 +1,4 @@
-.tabs {
+/*.tabs {
     background: #FFFFFF;
 }
 
@@ -42,4 +42,44 @@
 .tabs:has(.tabs__input[data-block="container"]:checked) ~ .preview_border .preview__cards#container {
     display: grid;
 }
+*/
 
+.tabs {
+    background: var(--white);
+}
+
+.tabs__wrap {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tabs__scroller {
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__input_all-components:checked ~ .preview__cards_all-components {
+    display: grid;
+}
+
+.tabs__input_elements:checked ~ .preview__cards_elements {
+    display: grid;
+}
+
+.tabs__input_container:checked ~ .preview__cards_container {
+    display: grid;
+}

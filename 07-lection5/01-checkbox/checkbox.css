@@ -46,8 +46,12 @@
     border-color: #4263EB;
 }
 
-.checkbox__input:checked ~ .checkbox__icon {
+.checkbox__input:checked ~ .checkbox__state.checkbox__icon {
     display: block;
+}
+
+.checkbox__input:disabled ~ .checkbox__state {
+    pointer-events: none;
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control{
