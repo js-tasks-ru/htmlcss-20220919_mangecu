@@ -20,3 +20,9 @@
 .sidebar__link_active {
     color: #D84910;
 }
+
+@media screen and (max-width: 375px) {
+    .sidebar {
+        display: none;
+    }
+}

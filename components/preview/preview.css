@@ -37,6 +37,21 @@
     display: none;
 }
 
+@media screen and (max-width: 375px) {
+    .preview__cards {
+        grid-template-columns: repeat(auto-fit, 163px);
+        gap: 16px;
+    }
+
+    .preview__button {
+        display: none;
+    }
+
+    .preview__template {
+        background: var(--white);
+    }
+}
+
 
 
 
