@@ -1,56 +1,5 @@
-/*.tabs {
-    background: #FFFFFF;
-}
-
-.tabs__wrap {
-    display: flex;
-    gap: 40px;
-}
-
-.tabs__radio {
-    display: inline-block;
-    position: relative;
-}
-
-.tabs__input {
-    position: absolute;
-    outline: none;
-    clip: rect(0,0,0,0);
-}
-
-.tabs__title {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.tabs__input:checked ~ .tabs__title{
-    padding-bottom: 8px;
-    border-bottom: 5px solid var(--black);
-}
-
-.tabs:has(.tabs__input[data-block="all-components"]:checked) ~ .preview_border .preview__cards#all-components {
-    display: grid;
-}
-
-.tabs:has(.tabs__input[data-block="elements"]:checked) ~ .preview_border .preview__cards#elements {
-    display: grid;
-}
-
-.tabs:has(.tabs__input[data-block="container"]:checked) ~ .preview_border .preview__cards#container {
-    display: grid;
-}
-*/
-
 .tabs {
-    background: var(--white);
-}
 
-.tabs__wrap {
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 .tabs__input {
@@ -65,21 +14,40 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    position: relative;
+    color: var(--grey-3);
+    white-space: nowrap;
 }
 
 .tabs__scroller {
+    background: var(--white);
+    overflow: hidden;
+}
+
+.tabs__menu {
     display: flex;
     gap: 40px;
+    /*overflow-x: scroll;*/
 }
 
-.tabs__input_all-components:checked ~ .preview__cards_all-components {
-    display: grid;
+.tabs__line {
+    height: 1px;
+    background: var(--grey-2);
 }
 
-.tabs__input_elements:checked ~ .preview__cards_elements {
-    display: grid;
+.tabs__input_all-components:checked ~ .tabs__scroller .tabs__title[for="#all-components"],
+.tabs__input_units:checked ~ .tabs__scroller .tabs__title[for="#units"],
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__title[for="#elements"],
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__title[for="#containers"] {
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
 }
 
-.tabs__input_container:checked ~ .preview__cards_container {
+.tabs__input_all-components:checked ~ .preview__wrap .preview__cards_all-components,
+.tabs__input_units:checked ~ .preview__wrap .preview__cards_units,
+.tabs__input_elements:checked ~ .preview__wrap .preview__cards_elements,
+.tabs__input_containers:checked ~ .preview__wrap .preview__cards_containers {
     display: grid;
 }

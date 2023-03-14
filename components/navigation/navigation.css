@@ -1,14 +1,12 @@
 .navigation {
-    display: flex;
-    flex-wrap: wrap;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-.navigation__main {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 24px;
 }
 

@@ -17,27 +17,23 @@
                   <svg class="header__logo">
                      <use href="assets/images/svg/sprite.svg#logo"></use>
                   </svg>
-                  <div class="header__right">
-                     <nav class="navigation">
-                        <div class="navigation__main">
-                           <a href="#" class="navigation__link navigation__main_active">Components</a>
-                           <a href="#" class="navigation__link">About</a>
-                           <a href="#" class="navigation__link">Contact</a>
-                        </div>
-                     </nav>
-                     <label class="theme">
-                        <input type="checkbox" class="theme__input">
-                        <svg class="theme__sun">
-                           <use href="assets/images/svg/sprite.svg#icon-sun"></use>
-                        </svg>
-                        <div class="theme__state">
-                           <span class="theme__toggle"></span>
-                        </div>
-                        <svg class="theme__moon">
-                           <use href="assets/images/svg/sprite.svg#icon-moon"></use>
-                        </svg>
-                     </label>
-                  </div>
+                  <nav class="navigation">
+                     <a href="#" class="navigation__link navigation__main_active">Components</a>
+                     <a href="#" class="navigation__link">About</a>
+                     <a href="#" class="navigation__link">Contact</a>
+                  </nav>
+                  <label class="theme">
+                     <input type="checkbox" class="theme__input">
+                     <svg class="theme__sun">
+                        <use href="assets/images/svg/sprite.svg#icon-sun"></use>
+                     </svg>
+                     <div class="theme__state">
+                        <span class="theme__toggle"></span>
+                     </div>
+                     <svg class="theme__moon">
+                        <use href="assets/images/svg/sprite.svg#icon-moon"></use>
+                     </svg>
+                  </label>
                </div>
                <h1 class="header__title">Reusable component library</h1>
             </div>
@@ -45,18 +41,20 @@
       </header>
       <main class="preview">
          <div class="tabs">
-            <div class="tabs__wrap container">
-               <input type="radio" class="tabs__input tabs__input_all-components" name="choice" id="#all-components" checked>
-               <input type="radio" class="tabs__input tabs__input_elements" name="choice" id="#elements">
-               <input type="radio" class="tabs__input tabs__input_container" name="choice" id="#container">
-
-               <div class="tabs__scroller">
+            <input type="radio" class="tabs__input tabs__input_all-components" name="choice" id="#all-components" checked>
+            <input type="radio" class="tabs__input tabs__input_units" name="choice" id="#units">
+            <input type="radio" class="tabs__input tabs__input_elements" name="choice" id="#elements">
+            <input type="radio" class="tabs__input tabs__input_containers" name="choice" id="#containers">
+            <div class="tabs__scroller">
+               <div class="tabs__menu container">
                   <label for="#all-components" class="tabs__title">All components</label>
+                  <label for="#units" class="tabs__title">Units</label>
                   <label for="#elements" class="tabs__title">Elements</label>
-                  <label for="#container" class="tabs__title">Container</label>
+                  <label for="#containers" class="tabs__title">Containers</label>
                </div>
-
-
+            </div>
+            <div class="tabs__line"></div>
+            <div class="preview__wrap container">
                <div class="preview__cards preview__cards_all-components">
                   <div class="card card_gap">
                      <div class="card__content">
@@ -95,6 +93,22 @@
                      <h3 class="card__title">Avatar</h3>
                   </div>
                </div>
+
+               <div class="preview__cards preview__cards_units">
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Tooltip</h3>
+                  </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Avatar</h3>
+                  </div>
+               </div>
+
                <div class="preview__cards preview__cards_elements">
                   <div class="card card_gap">
                      <div class="card__content">
@@ -106,36 +120,27 @@
                      <div class="card__content">
 
                      </div>
-                     <h3 class="card__title">Histogram</h3>
-                  </div>
-                  <div class="card card_gap">
-                     <div class="card__content">
-
-                     </div>
-                     <h3 class="card__title">Avatar</h3>
-                  </div>
-               </div>
-               <div class="preview__cards preview__cards_container">
-                  <div class="card card_gap">
-                     <div class="card__content">
-
-                     </div>
-                     <h3 class="card__title">Tooltip</h3>
-                  </div>
-                  <div class="card card_gap">
-                     <div class="card__content">
-
-                     </div>
                      <h3 class="card__title">Calendar</h3>
                   </div>
+
+               </div>
+
+               <div class="preview__cards preview__cards_containers">
                   <div class="card card_gap">
                      <div class="card__content">
 
                      </div>
                      <h3 class="card__title">Modal dialog</h3>
                   </div>
+                  <div class="card card_gap">
+                     <div class="card__content">
+
+                     </div>
+                     <h3 class="card__title">Histogram</h3>
+                  </div>
                </div>
             </div>
+            <div class="tabs__line"></div>
          </div>
       </main>
       <footer class="footer">
