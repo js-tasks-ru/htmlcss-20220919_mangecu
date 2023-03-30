@@ -1,5 +1,5 @@
 .tabs {
-
+    height: 100%;
 }
 
 .tabs__input {
@@ -29,7 +29,7 @@
 .tabs__menu {
     display: flex;
     gap: 40px;
-    /*overflow-x: scroll;*/
+    overflow-x: auto;
 }
 
 .tabs__line {

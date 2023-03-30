@@ -1,5 +1,4 @@
 .input {
-    position: relative;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -13,6 +12,10 @@
     text-transform: uppercase;
     color: #ACB5BD;
     margin-bottom: 5px;
+}
+
+.input__bottom {
+    position: relative;
 }
 
 .input__field {
@@ -29,8 +32,9 @@
 
 .input__icon {
     position: absolute;
-    top: 50%;
     right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .input_success {

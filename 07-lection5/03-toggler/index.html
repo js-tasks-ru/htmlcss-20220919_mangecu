@@ -9,10 +9,12 @@
    <link rel="stylesheet" href="../../assets/css/main.css">
    <link rel="stylesheet" href="./toggler.css">
    <style>
-      .preview {
+      .preview__toggler {
+         height: 100%;
          display: flex;
+         justify-content: center;
+         align-items: center;
          flex-direction: column;
-         justify-content: space-evenly;
       }
    </style>
 </head>
@@ -25,62 +27,66 @@
                <svg class="header__logo">
                   <use href="../../assets/images/svg/sprite.svg#logo"></use>
                </svg>
-               <div class="header__right">
-                  <nav class="navigation">
-                     <div class="navigation__main">
-                        <a href="#" class="navigation__link navigation__main_active">Components</a>
-                        <a href="#" class="navigation__link">About</a>
-                        <a href="#" class="navigation__link">Contact</a>
-                     </div>
-                  </nav>
-                  <label class="theme">
-                     <input type="checkbox" class="theme__input">
-                     <svg class="theme__sun">
-                        <use href="../../assets/images/svg/sprite.svg#icon-sun"></use>
-                     </svg>
-                     <div class="theme__state">
-                        <span class="theme__toggle"></span>
-                     </div>
-                     <svg class="theme__moon">
-                        <use href="../../assets/images/svg/sprite.svg#icon-moon"></use>
-                     </svg>
-                  </label>
-               </div>
+               <nav class="navigation">
+                  <a href="#" class="navigation__link navigation__main_active">Components</a>
+                  <a href="#" class="navigation__link">About</a>
+                  <a href="#" class="navigation__link">Contact</a>
+               </nav>
+               <label class="theme">
+                  <input type="checkbox" class="theme__input">
+                  <svg class="theme__sun">
+                     <use href="assets/images/svg/sprite.svg#icon-sun"></use>
+                  </svg>
+                  <div class="theme__state">
+                     <span class="theme__toggle"></span>
+                  </div>
+                  <svg class="theme__moon">
+                     <use href="assets/images/svg/sprite.svg#icon-moon"></use>
+                  </svg>
+               </label>
             </div>
             <h1 class="header__title">Reusable component library</h1>
-            <nav class="navigation">
-               <div class="navigation__content">
-                  <a href="#" class="navigation__link navigation__content_active">All components</a>
-                  <a href="#" class="navigation__link">Elements</a>
-                  <a href="#" class="navigation__link">Containers</a>
-                  <a href="#" class="navigation__link">Templates</a>
-               </div>
-            </nav>
          </div>
       </div>
    </header>
-   <main class="preview container">
-      <label class="toggler">
-         <input type="checkbox" class="toggler__input">
-         <div class="toggler__state">
-            <span class="toggler__switch"></span>
+   <main class="preview">
+      <div class="tabs">
+         <input type="radio" class="tabs__input tabs__input_all-components" name="choice" id="#all-components" checked>
+         <input type="radio" class="tabs__input tabs__input_units" name="choice" id="#units">
+         <input type="radio" class="tabs__input tabs__input_elements" name="choice" id="#elements">
+         <input type="radio" class="tabs__input tabs__input_containers" name="choice" id="#containers">
+         <div class="tabs__scroller">
+            <div class="tabs__menu container">
+               <label for="#all-components" class="tabs__title">All components</label>
+               <label for="#units" class="tabs__title">Units</label>
+               <label for="#elements" class="tabs__title">Elements</label>
+               <label for="#containers" class="tabs__title">Containers</label>
+            </div>
          </div>
-         <div class="toggler__title">Off</div>
-      </label>
-      <label class="toggler">
-         <input type="checkbox" class="toggler__input" checked>
-         <div class="toggler__state">
-            <span class="toggler__switch"></span>
+         <div class="preview__toggler">
+            <label class="toggler">
+               <input type="checkbox" class="toggler__input">
+               <div class="toggler__state">
+                  <span class="toggler__switch"></span>
+               </div>
+               <div class="toggler__title">Off</div>
+            </label>
+            <label class="toggler">
+               <input type="checkbox" class="toggler__input" checked>
+               <div class="toggler__state">
+                  <span class="toggler__switch"></span>
+               </div>
+               <div class="toggler__title">On</div>
+            </label>
+            <label class="toggler">
+               <input type="checkbox" class="toggler__input" disabled>
+               <div class="toggler__state">
+                  <span class="toggler__switch"></span>
+               </div>
+               <div class="toggler__title">Disabled</div>
+            </label>
          </div>
-         <div class="toggler__title">On</div>
-      </label>
-      <label class="toggler">
-         <input type="checkbox" class="toggler__input" disabled>
-         <div class="toggler__state">
-            <span class="toggler__switch"></span>
-         </div>
-         <div class="toggler__title">Disabled</div>
-      </label>
+      </div>
    </main>
    <footer class="footer">
       <div class="footer__main">
@@ -93,3 +99,4 @@
 </div>
 </body>
 </html>
+
