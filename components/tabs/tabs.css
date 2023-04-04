@@ -1,0 +1,53 @@
+.tabs {
+    height: 100%;
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    position: relative;
+    color: var(--grey-3);
+    white-space: nowrap;
+}
+
+.tabs__scroller {
+    background: var(--white);
+    overflow: hidden;
+}
+
+.tabs__menu {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.tabs__line {
+    height: 1px;
+    background: var(--grey-2);
+}
+
+.tabs__input_all-components:checked ~ .tabs__scroller .tabs__title[for="#all-components"],
+.tabs__input_units:checked ~ .tabs__scroller .tabs__title[for="#units"],
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__title[for="#elements"],
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__title[for="#containers"] {
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
+}
+
+.tabs__input_all-components:checked ~ .preview__wrap .preview__cards_all-components,
+.tabs__input_units:checked ~ .preview__wrap .preview__cards_units,
+.tabs__input_elements:checked ~ .preview__wrap .preview__cards_elements,
+.tabs__input_containers:checked ~ .preview__wrap .preview__cards_containers {
+    display: grid;
+}

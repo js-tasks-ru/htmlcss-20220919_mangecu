@@ -1,10 +1,9 @@
 .preview {
-    background: #F9FAFC;
+
 }
 
-.preview_border {
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
+.preview__tabs {
+
 }
 
 .preview__wrap {
@@ -15,27 +14,19 @@
 }
 
 .preview__cards {
-    display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 350px);
     gap: 30px;
 }
 
-.preview__button {
-    padding: 15px 52px 14px 53px;
-    border: 1px solid #ACB5BD;
-    color: #495057;
-    align-self: center;
+.preview__cards {
+    display: none;
 }
 
 @media screen and (max-width: 375px) {
     .preview__cards {
         grid-template-columns: repeat(auto-fit, 163px);
         gap: 16px;
-    }
-
-    .preview__button {
-        display: none;
     }
 
     .preview__template {
